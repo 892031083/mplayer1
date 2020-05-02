@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="3dp"
+        android:background="@drawable/background_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:padding="7dp"
+            android:id="@+id/outbtn"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/icon_out"
+            android:scaleType="fitXY"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <TextView
+
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/white"
+            android:text="这里是标题"
+            android:id="@+id/titleText"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addbtn"
+            android:layout_alignBottom="@id/titleText"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/onloading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/tolodinganim"
+            android:src="@mipmap/icon_load1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:paddingTop="3dp"
+            android:paddingLeft="8dp"
+            android:text="正在加载...."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

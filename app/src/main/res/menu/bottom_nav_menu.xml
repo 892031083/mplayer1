@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/icon_dib"
+        android:title="点播台" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@mipmap/icon_tuij"
+        android:title="推荐" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@mipmap/icon_me"
+        android:title="我的" />
+
+</menu>

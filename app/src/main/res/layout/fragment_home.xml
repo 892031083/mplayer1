@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    >
+    <com.itheima.loopviewpager.LoopViewPager
+        android:id="@+id/lvp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:animTime="1000"
+        app:loopTime="4000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#55EEEBEB"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <com.itheima.loopviewpager.LoopTitleView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:textColor="#E9E4E4"
+                android:textSize="12sp" />
+
+            <com.itheima.loopviewpager.LoopDotsView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:dotShape="oval"
+                app:dotSize="4dp" />
+
+        </LinearLayout>
+
+    </com.itheima.loopviewpager.LoopViewPager>
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/chtext"
+        android:layout_below="@id/lvp_pager"
+        android:layout_centerHorizontal="true"
+        android:text="所有频道"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <GridView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/chtext"
+        android:id="@+id/gv_channel"
+        android:numColumns="3"
+        android:verticalSpacing="25dp"
+        android:horizontalSpacing="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_alignParentStart="true"
+        android:background="#4B4646"
+        android:paddingLeft="12dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:id="@+id/headd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tt1"
+            android:textColor="@color/recom_text_click"
+            android:textSize="13sp"
+            android:background="@drawable/defulpas"
+            android:text="标清播放"
+            android:layout_width="80dp"
+            android:layout_height="30dp"/>
+        <Button
+            android:id="@+id/tt2"
+            android:textColor="@color/recom_text_clickno"
+            android:textSize="13sp"
+            android:background="@drawable/reno"
+            android:layout_marginLeft="30dp"
+            android:text="高清播放"
+            android:layout_width="80dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rectview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

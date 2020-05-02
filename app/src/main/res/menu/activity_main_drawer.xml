@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/icon_home"
+            android:title="@string/menu_home" />
+        <item
+
+            android:id="@+id/nav_history"
+            android:icon="@mipmap/icon_history"
+            android:title="@string/menu_history" />
+        <item
+            android:id="@+id/nav_keep"
+            android:icon="@mipmap/icon_keep"
+            android:title="@string/menu_keep" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@mipmap/icon_germy"
+            android:title="@string/menu_gaymy" />
+    </group>
+
+    <item android:title="修改设置">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/icon_set"
+                android:title="设置" />
+            <item
+                android:id="@+id/nav_dateBq"
+                android:icon="@mipmap/icon_fon"
+                android:title="资源拔取" />
+
+        </menu>
+    </item>
+
+</menu>

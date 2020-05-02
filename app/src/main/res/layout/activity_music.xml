@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--        <include layout="@layout/scroll_list_layout"/>-->
+        <com.example.mplayer1.mview.ScrollListView
+            android:layout_above="@id/bt_mk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <include android:id="@+id/bt_mk" layout="@layout/music_bt_view"/>
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="3dp"
+            android:id="@+id/headmk"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+                <ImageView
+                    android:padding="7dp"
+                    android:id="@+id/outbtn"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/icon_out"
+                    android:scaleType="fitXY"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:text="音乐频道"
+                    android:paddingTop="5dp"
+                    android:layout_alignTop="@id/outbtn"
+                    android:paddingLeft="10dp"
+                    android:layout_toRightOf="@id/outbtn"
+                    android:id="@+id/title"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+<!--        <include android:visibility="gone" android:id="@+id/music_play" layout="@layout/music_play_layout"/>-->
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="@drawable/background_title"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <com.example.mplayer1.mview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/wk"
+        android:scaleType="fitXY"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/white"
+        android:text="这里是标题"
+        android:id="@+id/titleText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_alignBottom="@id/titleText"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/icon_add"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+</RelativeLayout>

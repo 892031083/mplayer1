@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mplayer1">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:usesCleartextTraffic="true"
+        android:name=".AppManager"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_lo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:theme="@style/APPThemStart"
+            android:fitsSystemWindows="true"
+            android:name=".StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"  android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:name=".PlayerActivity">
+        </activity>
+         <activity android:name=".GuideActivity"  android:theme="@style/AppTheme.Bvl">
+         </activity>
+        <activity android:name=".home.HomeActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".detaillist.DetailListActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".detaillist.AlbumDetailActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".live.AlbumLiveListActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".recom.RecomActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".GuaActivity"></activity>
+        <activity android:name=".news.NewsActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".home.HistoryActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".home.UserActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".home.WebpullActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <activity android:name=".music.MusicActivity" android:theme="@style/AppTheme.Bvl"></activity>
+        <service android:name=".music.MusicService"></service>
+        <activity android:name=".music.MsplayActivity" android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".music.LockScreenMusicAvtivity"  android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+    </application>
+
+</manifest>

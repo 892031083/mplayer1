@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <EditText
+            android:hint="视频名"
+            android:id="@+id/name_gua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="视频图片地址"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imgurl_gua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="视频播放地址"
+            android:id="@+id/play_gua"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/type_gua"
+            android:hint="1:电影 2.推荐 3.cr视频 4.cr动漫"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <Button
+        android:text="添加"
+        android:id="@+id/add_gua"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="查询"
+        android:id="@+id/get_gua"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/ccc"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+</LinearLayout>

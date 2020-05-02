@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="APPThemStart" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@mipmap/startup3</item>
+    </style>
+    <style name="notitle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.Bvl" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimRight</item>
+    </style>
+    <style name="ActivityAnimRight" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_start_activityright</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_out_activityright</item>
+    </style>
+
+    <style name="AppTheme.Bv2" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimDown</item>
+    </style>
+    <style name="ActivityAnimDown" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_start_activity</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_out_activity</item>
+    </style>
+
+</resources>

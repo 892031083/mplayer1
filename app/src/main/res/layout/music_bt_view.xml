@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    android:id="@+id/btmook"
+    android:background="@color/back_hui"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.mplayer1.mview.CircleImageView
+            android:id="@+id/musci_img"
+            android:src="@mipmap/startup4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+        <TextView
+            android:id="@+id/ms_name"
+            android:paddingTop="5dp"
+            android:textSize="11.5sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/musci_img"
+            android:text="Beautiful Now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@id/ms_name"
+        android:paddingLeft="10dp"
+        android:id="@+id/ms_zz"
+        android:layout_alignLeft="@id/ms_name"
+        android:textSize="11sp"
+        android:layout_toRightOf="@id/musci_img"
+        android:text="Zedd Jon Bellion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:paddingRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/ms_btn_play"
+            android:background="@mipmap/icon_play_ms"
+            android:layout_width="23dp"
+            android:layout_height="23dp"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ms_btn_xia"
+            android:background="@mipmap/icon_xia_ms"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/ms_btn_mls"
+            android:background="@mipmap/icon_line_ms"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+</RelativeLayout>
+

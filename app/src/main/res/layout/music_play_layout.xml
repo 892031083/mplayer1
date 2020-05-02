@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingTop="50dp"
+    android:background="@drawable/background_ms"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:padding="7dp"
+        android:id="@+id/outbtn"
+        android:src="@mipmap/icon_out"
+        android:scaleType="fitXY"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+    <TextView
+        android:id="@+id/msName"
+        android:text="Beautiful Now"
+        android:textSize="17sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/msName"
+        android:paddingTop="5dp"
+        android:text="Zedd Jon Bellion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/progress_layout"
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <TextView
+            android:text="00:00"
+            android:id="@+id/playTime"
+            android:textSize="11sp"
+            android:textColor="#FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/play_seekbar"
+        android:max="100"
+            android:progress="0"
+            android:layout_toRightOf="@id/playTime"
+            android:layout_toLeftOf="@id/playsumtime"
+            android:layout_marginTop="3dp"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/play_seekbar_layout"
+            android:thumb="@drawable/play_seekbar_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="00:00"
+            android:id="@+id/playsumtime"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="11sp"
+            android:textColor="#FFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="25dp"
+            android:layout_below="@id/play_seekbar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginBottom="5dp"
+                android:rotation="180"
+                android:id="@+id/upm"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@mipmap/msp_down"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <ImageButton
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/mpbtn"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@mipmap/play_play10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <ImageButton
+                android:layout_marginBottom="5dp"
+                android:id="@+id/downm"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@mipmap/msp_down"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

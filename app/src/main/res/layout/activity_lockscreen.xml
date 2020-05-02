@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="80dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:id="@+id/dingview"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/background_ms"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/table"
+            android:textSize="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:text="14:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:id="@+id/date"
+            android:textSize="15sp"
+            android:text="3月29日 星期日"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:paddingTop="12dp"
+            android:id="@+id/MsName"
+            android:textSize="15sp"
+            android:text="Beautiful Now "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:id="@+id/MsZZ"
+            android:textSize="13sp"
+            android:text="Zedd Jon Bellion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="35dp"
+        android:layout_above="@id/unclock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginBottom="5dp"
+            android:rotation="180"
+            android:id="@+id/upm"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@mipmap/msp_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <ImageButton
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/mpbtn"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@mipmap/play_play10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+        <ImageButton
+            android:layout_marginBottom="5dp"
+            android:id="@+id/downm"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@mipmap/msp_down"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/unclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.example.mplayer1.mview.UnlockButton
+        android:layout_marginBottom="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="20sp"
+            android:text="滑动解锁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

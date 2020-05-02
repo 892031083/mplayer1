@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:paddingLeft="10dp"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/background_live_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+              <ImageView
+                  android:layout_centerVertical="true"
+                  android:scaleType="fitXY"
+               android:src="@mipmap/hunanlive"
+               android:id="@+id/imagecctv"
+               android:layout_width="70dp"
+               android:layout_height="33dp"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imagecctv"
+            android:textColor="@android:color/black"
+            android:id="@+id/livename"
+            android:textSize="13sp"
+            android:layout_marginLeft="40dp"
+            android:text="CCTV"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <Button
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/icon_go"
+        android:layout_width="20dp"
+        android:layout_height="15dp"/>
+</RelativeLayout>
+</LinearLayout>

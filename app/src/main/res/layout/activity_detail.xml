@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="正在加载中..."
+        android:id="@+id/onloadingtext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include android:id="@+id/inc" layout="@layout/detail_head"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_below="@id/inc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pagers"
+        android:layout_above="@id/bottomlay"
+        android:layout_below="@id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bq"
+            android:text="标清"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/deta_batn_background2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/gq"
+            android:text="高清"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/deta_btn_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+
+            android:id="@+id/cq"
+            android:text="超清"
+            android:background="@drawable/deta_batn_background2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

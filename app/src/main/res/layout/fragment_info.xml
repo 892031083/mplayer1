@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/onloading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/tolodinganim"
+            android:src="@mipmap/icon_load1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:paddingTop="3dp"
+            android:paddingLeft="8dp"
+            android:text="正在加载...."
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <com.example.mplayer1.mview.PullLoadRecyclerView
+        android:layout_below="@id/onloading"
+        android:id="@+id/pullview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
